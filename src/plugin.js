@@ -4,11 +4,6 @@ import { remark } from 'remark'
 import remarkGfm from 'remark-gfm'
 import remarkToc from 'remark-toc'
 
-import remarkParse from 'remark-parse'
-import remarkRehype from 'remark-rehype'
-import rehypeSanitize from 'rehype-sanitize'
-import rehypeStringify from 'rehype-stringify'
-
 /** @type {import('unified').Plugin<[], import('mdast').Root>} */
 function myRemarkPluginToIncreaseHeadings() {
   return (tree) => {
