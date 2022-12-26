@@ -1,7 +1,6 @@
 import {visit} from 'unist-util-visit'
-import {unified} from 'unified'
 import { remark } from 'remark'
-import remarkGfm from 'remark-gfm'
+import remarkGfm from 'remark-gfm' // GitHub Flavored Markdown
 import remarkToc from 'remark-toc'
 
 /** @type {import('unified').Plugin<[], import('mdast').Root>} */
