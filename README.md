@@ -2,6 +2,8 @@
 These plugins can inspect and change your markup.
 You can use remark on the server, the client, CLIs, deno, etc.
 
+--- 
+
 ## Feature highlights
 
 *   [x] **[popular][]** (world’s most popular markdown parser)
@@ -48,6 +50,7 @@ Use v18:
 - [Syntax](#syntax)
 - [Syntax tree](#syntax-tree)
 - [Types](#types)
+- [Create plugins](#create-plugins)
 - [Compatibility](#compatibility)
 - [Security](#security)
 - [Contribute](#contribute)
@@ -400,6 +403,24 @@ export function myRemarkPluginAcceptingOptions(options) {
   }
 }
 ```
+
+## Create plugins
+
+To create a plugin, first read up on the [concept of plugins][unified-plugins].
+Then, read the [guide on “Creating a plugin with unified”][guide].
+Finally, take one of existing plugins, which looks similar to what you’re about
+to make, and work from there.
+If you get stuck, [discussions][] is a good place to get help.
+
+You should pick a name prefixed by `'remark-'` (such as `remark-lint`).
+**Do not use the `remark-` prefix** if the thing you create doesn’t work with
+`remark().use()`: it isn’t a “plugin” and will confuse users.
+If it works with mdast, use `'mdast-util-'`, if it works with any unist tree,
+use `unist-util-`, and if it works with virtual files, use `vfile-`.
+
+Use default exports to expose plugins from your packages, add `remark-plugin`
+keywords in `package.json`, add a `remark-plugin` topic to your repo on GitHub,
+and create a pull request to add the plugin here on this page!
 
 ## Compatibility
 
