@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "node src/plugin.js",
+    "start": "cd src/move-plugin && node plugin.js",
+    "test": "node src/plugin.js && node index.js",
     "format": "remark . --output"
   },
   "keywords": [],
