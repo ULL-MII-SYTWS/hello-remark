@@ -7,18 +7,24 @@
   "scripts": {
     "start": "cd src/move-plugin && node plugin.js",
     "test": "node src/plugin.js && node index.js",
-    "format": "remark . --output"
+    "format": "remark . --output",
+    "tree": "remark --tree-out src/move-plugin/index.md",
+    "html": "cd src/html && node example.js"
   },
   "keywords": [],
   "author": "Casiano Rodriguez Leon <crguezl@ull.edu.es> (https://crguezl.github.io/)",
   "license": "ISC",
   "dependencies": {
+    "mdast-util-math": "^3.0.0",
+    "micromark-extension-math": "^3.1.0",
     "rehype-sanitize": "^5.0.1",
     "rehype-stringify": "^9.0.3",
     "remark": "^14.0.2",
     "remark-frontmatter": "^4.0.1",
     "remark-gfm": "^3.0.1",
+    "remark-html": "^15.0.1",
     "remark-rehype": "^10.1.0",
+    "remark-sources": "^1.1.0",
     "unified": "^10.1.2",
     "unist-util-visit": "^4.1.1"
   },
