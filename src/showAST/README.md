@@ -380,6 +380,126 @@ example.md
 ⚠ 2 warnings
 ```
 
+## Processing frontmatter and math
+`➜  showAST git:(main) node front
+matterplusmath.mjs`
+```json
+{
+  "type": "root",
+  "children": [
+    {
+      "type": "toml",
+      "value": "title = \"New Website\"",
+      "position": {
+        "start": {
+          "line": 1,
+          "column": 1,
+          "offset": 0
+        },
+        "end": {
+          "line": 3,
+          "column": 4,
+          "offset": 29
+        }
+      }
+    },
+    {
+      "type": "heading",
+      "depth": 1,
+      "children": [
+        {
+          "type": "text",
+          "value": "Other markdown",
+          "position": {
+            "start": {
+              "line": 5,
+              "column": 3,
+              "offset": 33
+            },
+            "end": {
+              "line": 5,
+              "column": 17,
+              "offset": 47
+            }
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 5,
+          "column": 1,
+          "offset": 31
+        },
+        "end": {
+          "line": 5,
+          "column": 17,
+          "offset": 47
+        }
+      }
+    },
+    {
+      "type": "paragraph",
+      "children": [
+        {
+          "type": "inlineMath",
+          "value": "a^2",
+          "data": {
+            "hName": "code",
+            "hProperties": {
+              "className": [
+                "language-math",
+                "math-inline"
+              ]
+            },
+            "hChildren": [
+              {
+                "type": "text",
+                "value": "a^2"
+              }
+            ]
+          },
+          "position": {
+            "start": {
+              "line": 7,
+              "column": 1,
+              "offset": 49
+            },
+            "end": {
+              "line": 7,
+              "column": 6,
+              "offset": 54
+            }
+          }
+        }
+      ],
+      "position": {
+        "start": {
+          "line": 7,
+          "column": 1,
+          "offset": 49
+        },
+        "end": {
+          "line": 7,
+          "column": 6,
+          "offset": 54
+        }
+      }
+    }
+  ],
+  "position": {
+    "start": {
+      "line": 1,
+      "column": 1,
+      "offset": 0
+    },
+    "end": {
+      "line": 7,
+      "column": 6,
+      "offset": 54
+    }
+  }
+}
+``` 
 
 ## References
 
