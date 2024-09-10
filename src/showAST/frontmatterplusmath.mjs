@@ -20,15 +20,3 @@ const tree = fromMarkdown(doc, {
 })
 
 console.log(JSON.stringify(tree, null, 2))
-
-/*
-const out = toMarkdown(tree, {
-  extensions: [
-    frontmatterToMarkdown(['yaml', 'toml']),
-    math()
-  ],
-  mdastExtensions: [mathFromMarkdown()] 
-})
-
-console.log("-------\n", out)
-*/
