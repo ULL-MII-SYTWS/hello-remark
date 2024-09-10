@@ -1,3 +1,5 @@
+## Issue 2823: Include directive in frontmatter
+
 See https://github.com/shuding/nextra/issues/2823
 
 Thanks for nextra ❤️ !
@@ -25,3 +27,8 @@ video20240403:
   date: "2024/04/03"
   comment: "Clase del 03/04/2024. Doubts and queries about lexer-generator. The FunctionObject class. Callable instances. First steps on the assign function"
 ```
+
+## Nextra uses gray-matter
+
+* See https://github.com/shuding/nextra/blob/main/packages/nextra/src/compile.ts#L8
+* https://github.com/jonschlinkert/gray-matter
