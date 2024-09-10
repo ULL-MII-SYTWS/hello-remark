@@ -9,4 +9,4 @@ const tree = fromMarkdown(doc, {
   mdastExtensions: [mathFromMarkdown()] 
 })
 
-console.log(JSON.stringify(tree, null,2))
+console.log(JSON.stringify(tree, null, 2))
