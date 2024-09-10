@@ -384,3 +384,7 @@ example.md
 ## References
 
 - [remark-parse](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-parse#readme)
+- https://github.com/syntax-tree/mdast-util-from-markdown
+- https://github.com/syntax-tree/mdast-util-frontmatter
+- https://astexplorer.net/#/gist/4aec8b44695d364fb0d57b7b1034700b/9e48301bb44a698bd2a4384c9e479848afc7f1f4
+- https://github.com/syntax-tree/mdast-util-math
