@@ -15,5 +15,5 @@ const file = await unified()
   })
   .process(await read('remark-frontmatter-example.md'))
 
-console.log(`------`);
-console.log(String(file))
+//console.log(`------`);
+//console.log(String(file))
