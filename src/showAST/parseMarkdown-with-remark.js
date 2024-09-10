@@ -9,7 +9,6 @@ const markdownContent = fs.readFileSync(filePath, 'utf-8');
 const ast = remark()
     .use(remarkParse, {  
         gfm: true,           // Enable GitHub Flavored Markdown
-        position: false
     })
     .parse(markdownContent);
 
