@@ -383,6 +383,7 @@ example.md
 
 ## References
 
+- mdast specification: https://github.com/syntax-tree/mdast
 - [remark-parse](https://github.com/remarkjs/remark/tree/HEAD/packages/remark-parse#readme)
 - https://github.com/syntax-tree/mdast-util-from-markdown
 - https://github.com/syntax-tree/mdast-util-frontmatter
