@@ -381,6 +381,7 @@ example.md
 ```
 
 ## Processing frontmatter and math
+
 `➜  showAST git:(main) node front
 matterplusmath.mjs`
 ```json
